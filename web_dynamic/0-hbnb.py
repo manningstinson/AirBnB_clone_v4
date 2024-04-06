@@ -45,7 +45,7 @@ def hbnb():
     '/static/styles/8-places.css'
 ]
 
-    return render_template('../templates/0-hbnb.html',
+    return render_template('0-hbnb.html',
                            states=st_ct,
                            amenities=amenities,
                            places=places,
