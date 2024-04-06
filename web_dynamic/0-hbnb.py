@@ -36,14 +36,22 @@ def hbnb():
 
  # Generate a UUID
     cache_id = uuid.uuid4()
+    
+    css_links = [
+    '/static/css/4-common.css',
+    '/static/css/3-header.css',
+    '/static/css/3-footer.css',
+    '/static/css/6-filters.css',
+    '/static/css/8-places.css'
+]
 
-    return render_template('0-hbnb.html',
+    return render_template('../templates/0-hbnb.html',
                            states=st_ct,
                            amenities=amenities,
-                           places=places
-                           css_links=css_links
+                           places=places,
+                           css_links=css_links,
                            cache_id=cache_id) 
 
 if __name__ == "__main__":
     """ Main Function """
-    app.run(host='0.0.0.0', port=5001)
+    app.run(host='0.0.0.0', port=5000)
