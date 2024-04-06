@@ -38,11 +38,11 @@ def hbnb():
     cache_id = uuid.uuid4()
     
     css_links = [
-    '/static/css/4-common.css',
-    '/static/css/3-header.css',
-    '/static/css/3-footer.css',
-    '/static/css/6-filters.css',
-    '/static/css/8-places.css'
+    '/static/styles/4-common.css',
+    '/static/styles/3-header.css',
+    '/static/styles/3-footer.css',
+    '/static/styles/6-filters.css',
+    '/static/styles/8-places.css'
 ]
 
     return render_template('../templates/0-hbnb.html',
